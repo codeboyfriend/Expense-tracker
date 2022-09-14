@@ -11,22 +11,24 @@ const AddTransaction = () => {
       <form>
         <label>Text</label>
         <input 
-            type='text' 
-            placeholder='Enter Text...'
-            value={text}
-            onChange={(e) => setText(e.target.value)} 
+          type='text' 
+          placeholder='Enter Text...'
+          value={text}
+          onChange={(e) => setText(e.target.value)} 
         />
 
         <label>
-            Amount <br />
-            (negative - expense, positive - income )
+          Amount <br />
+          (negative - expense, positive - income)
         </label>
         <input 
-            type='number' 
-            placeholder='Enter Amount...'
-            value={amount}
-            onChange={(e) => setAmount(e.target.value)} 
+          type='number' 
+          placeholder='Enter Amount...'
+          value={amount}
+          onChange={(e) => setAmount(e.target.value)} 
         />
+
+        <button className="btn">Add transaction</button>
       </form>
     </>
   )
