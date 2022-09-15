@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 export default (state, action) => {
     switch (action.type) {
         case 'DELETE_TRANSACTION':
@@ -9,8 +10,7 @@ export default (state, action) => {
         case 'ADD_TRANSACTION':
             return{
                 ...state,
-                transactions: [action.payload, ...state.transaction]
-                // { id: Math.floor(Math.random() * 100), text: text, amount: amount },
+                transactions: [action.payload, ...state.transactions]
             }
         default:
             return state;

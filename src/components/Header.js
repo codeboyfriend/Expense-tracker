@@ -1,8 +1,11 @@
-import React from 'react'
-
 const Header = () => {
+  const header = {
+    fontSize: '18px',
+    marginBottom: '15px'
+  }
+
   return (
-    <h2>
+    <h2 style={header}>
       Expense Tracker
     </h2>
   )

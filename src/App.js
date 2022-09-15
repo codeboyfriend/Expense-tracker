@@ -10,6 +10,7 @@ function App() {
   return (
     <GlobalProvider>
       <div className="App">
+        <div className='container'>
         <Header />
 
         <div className='container'>
@@ -17,6 +18,7 @@ function App() {
           <IncomeExpense />
           <TransactionList />
           <AddTransaction />
+          </div>
         </div>
       </div>
     </GlobalProvider>

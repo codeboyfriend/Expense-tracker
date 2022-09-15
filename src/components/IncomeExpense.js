@@ -16,15 +16,17 @@ const IncomeExpense = () => {
     .toFixed(2)
 
   return (
-    <div>
+    <div  className="board">
       <div>
-        <h4>Income</h4>
-        <p>{income}</p>
+        <h4>INCOME</h4>
+        <p style={{ color: ' #5aeb5a'}}>${income}</p>
       </div>
 
+      <hr />
+      
       <div>
-        <h4>Expense</h4>
-        <p>{expense}</p>
+        <h4>EXPENSE</h4>
+        <p style={{ color: '#ad0202'}}>${expense}</p>
       </div>
     </div>
   )
